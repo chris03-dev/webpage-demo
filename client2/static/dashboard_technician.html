@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<title>Technician Dashboard - SportsPro Technical Support</title>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='initial-scale=1.0,width=device-width,height=device-height'>
+		<link rel='stylesheet' href='theme.css'>
+		<script src='https://www.gstatic.com/charts/loader.js'></script>
+		<script src='script.js' defer></script>
+	</head>
+	<body>
+		<header>
+			<h1>SportsPro Technical Support</h1>
+			<p>Sports management software for the sports enthusiast</p>
+		</header>
+		<article>
+			<div class='hflex'>
+				<h2>Dashboard</h2>
+				<a href='index.html'>Home</a>
+			</div>
+			
+			<h3>Products</h3>
+			<div>
+			<table id='products'>
+				<tr>
+					<th>Code</th>
+					<th>Name</th>
+					<th>Version</th>
+					<th>Release Date</th>
+				</tr>
+			</table>
+			</div>
+			
+			<h3>Incidents</h3>
+			<div>
+			<table id='incidents'>
+				<tr>
+					<th>ID</th>
+					<th>Customer</th>
+					<th>Product</th>
+					<th>Technician</th>
+					<th>Date Opened</th>
+					<th>Date Closed</th>
+					<th>Title</th>
+				</tr>
+			</table>
+			</div>
+			
+			<div id='product_incidents' style='margin:0'></div>
+			<div id='technician_assign_distribution' style='margin:0'></div>
+			
+		</article>
+		<footer>
+			<p>&copy; 2025 SportsPro, Inc.</p>
+		</footer>
+	</body>
+</html>

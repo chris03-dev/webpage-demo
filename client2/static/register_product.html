@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<title>Register Product - SportsPro Technical Support</title>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='initial-scale=1.0,width=device-width,height=device-height'>
+		<link rel='stylesheet' href='theme.css'>
+		<script src='script.js' defer></script>
+	</head>
+	<body>
+		<header>
+			<h1>SportsPro Technical Support</h1>
+			<p>Sports management software for the sports enthusiast</p>
+		</header>
+		<article>
+			<div class='hflex'>
+				<h2>Register Product</h2>
+				<a href='index.html'>Home</a>
+			</div>
+			
+			<div class='vflex'>
+				<label for='product_code'>Product:</label>
+				<select id='product_code' name='product_code' required>
+					 <option value="" selected disabled>Select product...</option>
+				</select>
+			</div>
+			
+			<button class='action' id='add_entry' disabled>Register Product</button>
+			<button id='cancel_update' hidden>Cancel</button>
+		</article>
+		<footer>
+			<p>&copy; 2025 SportsPro, Inc.</p>
+		</footer>
+	</body>
+</html>

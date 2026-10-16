@@ -1,0 +1,212 @@
+:root {font-family: Arial, Roboto, Helvetica, sans-serif;}
+
+body {
+	display: flex;
+	flex-direction: column;
+	
+	margin: 0;
+	min-height: 100vh;
+}
+
+header {
+	color: white;
+	padding: 1rem;
+	padding-left: calc(5rem + (100vw - 1332px)/2);
+	background-color: #1a56db;
+	box-shadow: 0 2px 4px #0004;
+}
+
+footer {
+	color: #6c757d;
+	padding: 1rem 0;
+	text-align: center;
+	margin-top: auto;
+}
+
+article {
+	margin: .5rem calc(5rem + (100vw - 1332px)/2);
+	padding: 2rem;
+	
+	box-shadow: 0 2px 4px #0004;
+	border-radius: .25rem;
+}
+
+article.login {
+	display: block;
+	width: 520px;
+	max-width: calc(100vw - 3rem);
+	margin: .5rem auto;
+}
+
+.table_container {
+	overflow-x: auto;
+}
+article div {
+	overflow-x: auto;
+	margin-bottom: 2rem;
+}
+table {
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 1rem;
+	border: 1px solid;
+}
+
+label {
+	font-size: .9rem;
+	font-weight: bold;
+	margin: .5rem 0;
+}
+
+input, select, textarea {
+	font-size: 1rem;
+	border: 1px solid;
+	border-radius: .25rem;
+	padding: .5rem;
+	margin-right: 0;
+	margin-bottom: 1rem;
+	
+	color: inherit;
+	background-color: inherit;
+}
+textarea {
+	font-family: mono;
+	min-height: 5rem;
+	resize: vertical;
+}
+
+input[required]:valid,
+select[required]:valid,
+textarea[required]:valid {
+	background-color: #0f04;
+}
+
+button {
+	color: inherit;
+	background-color: #8884;
+	
+	border: 0;
+	border-radius: .25rem;
+	font-size: 1rem;
+	padding: .5rem 1rem;
+	margin: .25rem;
+	
+	cursor: pointer;
+}
+
+button[disabled],
+input[readonly] {
+	opacity: 0.4;
+}
+
+button.danger {color: white; background-color: #dc3545;}
+button.action {color: white; background-color: #1a73e8;}
+
+button.danger:hover {background-color: #c82333;}
+button.action:hover {background-color: #0d62d6;}
+
+header p,
+footer p {font-size: .9rem; margin: 0;}
+h1, h2, h3 {margin-top: 0;}
+:link, :visited {
+	color: #1a73e8;
+	text-decoration: none;
+}
+
+:link:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 1.8rem;
+	margin-bottom: .5rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	padding-bottom: .5rem;
+	border-bottom: 1px solid;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-bottom: .5rem;
+	padding: .5rem;
+}
+
+ul[role=menu] {
+	margin-top: 0;
+	padding: 0 .5rem .5rem;
+}
+
+ul[role=menu] > li {
+	list-style: none;
+	padding: .5rem;
+}
+
+.hflex {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 1rem;
+	
+	margin: 0 0 .5rem;
+}
+
+.vflex {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+
+.incident {margin-bottom: 0;}
+.incident * {margin: .5rem 0;}
+.incident > :first-child {flex-grow: 1;}
+.incident > :last-child  {flex-grow: 3;}
+.description {
+	background-color: #8882;
+	min-height: 4rem;
+	line-height: 1.5rem;
+	
+	border: 1px solid;
+	border-radius: .25rem;
+	padding: .5rem;
+	
+}
+
+@media screen and (max-width: 1332px) {
+	header  {padding-left: calc(5vw + 1rem);}
+	article {margin: .5rem calc(5vw + 1rem);}
+}
+
+@media screen and (max-width: 768px) {
+	header  {padding: 1rem;}
+	article {
+		width: initial;
+		margin: .5rem;
+		padding: 1rem;
+	}
+}
+
+/* Light mode */
+:root, option {
+	color: black;
+	background-color: #f5f7fa;
+}
+
+article {background-color: white;}
+footer {background-color: #f0f0f0;}
+
+th, td {border-color: #ddd;}
+tr:nth-child(odd) {background-color: #f8f8f8;}
+
+input, select, textarea, .description {border-color: #ddd;}
+
+h2 {border-color: #f0f0f0;}
+h3 {background-color: #f0f0f0;}
